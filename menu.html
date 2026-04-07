@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>FlavorNest Menu</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="script.js"></script>
+</head>
+<body>
+<header class="top-nav">
+<h2>FlavorNest</h2>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="menu.html">Menu</a></li>
+<li><a href="cart.html">Cart (<span id="cartCount">0</span>)</a></li>
+<li><a href="orders.html">My Orders</a></li>
+<li><a href="help.html">Help</a></li>
+</ul>
+</header>
+<h1 class="menu-title">Our Menu</h1>
+<div class="filter-buttons">
+<button onclick="filterFood('all')">All</button>
+<button onclick="filterFood('snacks')">Snacks</button>
+<button onclick="filterFood('main')">Main Course</button>
+<button onclick="filterFood('dessert')">Desserts</button>
+</div>
+<div id="menuContainer" class="menu-container"></div>
+<div id="recommendedItems" class="recommended-container"></div>
+</body>
+</html>

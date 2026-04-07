@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>FlavorNest</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="script.js"></script>
+</head>
+<body>
+<header class="top-nav">
+<h2 class="logo">FlavorNest</h2>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="menu.html">Menu</a></li>
+<li><a href="cart.html">Cart (<span id="cartCount">0</span>)</a></li>
+<li><a href="orders.html">My Orders</a></li>
+<li><a href="help.html">Help</a></li>
+</ul>
+</header>
+<section class="hero">
+<div class="hero-text">
+<h1>Craving Something Delicious?</h1>
+<p>Order fresh and tasty meals in seconds with FlavorNest.</p>
+<div class="hero-badges">
+<span> Rated 4.5 by Customers</span>
+<span> Fast & Reliable Delivery</span>
+<span> Made with Fresh Ingredients</span>
+</div>
+<a href="menu.html" class="order-btn">View Delicious Menu</a>
+</div>
+</section>
+
+<section class="food-search">
+<h2> Search Food</h2>
+<input 
+type="text" 
+id="searchInput" 
+placeholder="Search food..." 
+onkeyup="searchFood()"
+>
+<div id="searchResults" class="food-grid"></div>
+</section>
+
+
+<section class="popular">
+<h2>Popular Foods</h2>
+<div class="food-grid">
+<div class="food-card">
+<img src="images/momos.jpg">
+<h3>Momos</h3>
+<p> 4.7 |  20 mins</p>
+<p class="price">₹120</p>
+<button onclick="addToCart('Momos',120)">Add to Cart</button>
+</div>
+<div class="food-card">
+<img src="images/paneer-tikka.jpg">
+<h3>Paneer Tikka</h3>
+<p> 4.8 |  25 mins</p>
+<p class="price">₹220</p>
+<button onclick="addToCart('Paneer Tikka',260)">Add to Cart</button>
+</div>
+<div class="food-card">
+<img src="images/white-sauce-pasta.jpg">
+<h3>White Sauce Pasta</h3>
+<p> 4.6 |  20 mins</p>
+<p class="price">₹200</p>
+<button onclick="addToCart('White Sauce Pasta',200)">Add to Cart</button>
+</div>
+</section>
+
+
+
+<section class="today-special">
+
+<h2> Today's Special</h2>
+
+<div class="food-card special-card">
+
+<img src="images/paneer-pizza.jpg" alt="Paneer Pizza">
+
+<h3>Paneer Pizza</h3>
+
+<p> 4.8 |  20 mins</p>
+
+<p class="price">₹220</p>
+
+<button onclick="addToCart('Paneer Pizza',220)">
+Add to Cart
+</button>
+
+</div>
+
+</section>
+
+<section class="features">
+
+<h2>Why Choose FlavorNest</h2>
+
+<div class="feature-grid">
+
+<div class="feature">
+
+<h3>Fast Delivery</h3>
+
+<p>Get your food quickly at your door.</p>
+
+</div>
+
+<div class="feature">
+
+<h3>Quality Food</h3>
+
+<p>Partnered with trusted restaurants.</p>
+
+</div>
+
+<div class="feature">
+
+<h3>Easy Ordering</h3>
+
+<p>Simple and smooth ordering experience.</p>
+
+</div>
+
+</div>
+
+</section>
+<section class="reviews">
+
+<h2>Customer Reviews</h2>
+
+<div class="review-grid">
+
+<div class="review-card">
+<p>"The food was amazing and delivery was very fast!"</p>
+<h4>⭐ 4.5 - Riya</h4>
+</div>
+
+<div class="review-card">
+<p>"Loved the pizza and pasta. Very tasty!"</p>
+<h4>⭐ 4.7 - Aman</h4>
+</div>
+
+<div class="review-card">
+<p>"Simple website and easy to order food."</p>
+<h4>⭐ 4.4 - Neha</h4>
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+<div class="footer-grid">
+
+<div>
+
+<h3>FlavorNest</h3>
+
+<p>Fast and reliable food delivery service.</p>
+
+</div>
+
+<div>
+
+<h4>Company</h4>
+
+<p>About</p>
+<p>Careers</p>
+
+</div>
+
+<div>
+
+<h4>Support</h4>
+
+<p>Help Center</p>
+<p>Privacy Policy</p>
+<p>Email: support@flavornest.com</p>
+
+</div>
+
+</div>
+
+<p class="copyright">
+
+© 2026 FlavorNest
+
+</p>
+
+</footer>
+
+</body>
+</html>
